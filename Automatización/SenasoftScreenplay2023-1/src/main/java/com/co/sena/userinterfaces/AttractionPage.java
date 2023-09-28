@@ -19,4 +19,10 @@ public class AttractionPage {
 
     public static final Target BTN_SEARCH_ATR = Target.the("opcion buscar la atraccion")
             .locatedBy("//*[text()='Buscar']");
+    public static final Target BTN_LUGAR = Target.the("opcion ABRIR Lugar")
+            .locatedBy("//a[@city='medellin']");
+
+    public static final Target TXT_RESULT_CITY = Target.the("opcion ABRIR Lugar")
+            .locatedBy("//*[text()='Atracciones turísticas de Medellín']");
+
 }

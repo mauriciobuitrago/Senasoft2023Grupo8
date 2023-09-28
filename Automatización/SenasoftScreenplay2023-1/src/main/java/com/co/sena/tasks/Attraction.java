@@ -15,11 +15,16 @@ public class Attraction implements Task {
         actor.attemptsTo(Click.on(MenuComponent.BTN_ANUNCE),
                 Click.on(AttractionPage.BTN_ATRACCION),
                 Click.on(AttractionPage.BTN_SEARCH),
-                Enter.theValue("medellin").into(AttractionPage.BTN_SEARCH),
+                Click.on(AttractionPage.BTN_LUGAR),
                 Click.on(AttractionPage.BTN_DATE),
                 Click.on(AttractionPage.TXT_DATE_STAR),
                 Click.on(AttractionPage.TXT_DATE_END),
                 Click.on(AttractionPage.BTN_SEARCH_ATR));
+        try {
+            Thread.sleep(8000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
     public static Attraction enterAttraction()
     {

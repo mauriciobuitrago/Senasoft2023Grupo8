@@ -1,6 +1,6 @@
 package com.co.sena.tasks;
 
-import com.co.sena.models.DatosLogin;
+import com.co.sena.models.DataLogin;
 import com.co.sena.userinterfaces.LoginPage;
 import com.co.sena.userinterfaces.MenuComponent;
 import net.serenitybdd.screenplay.Actor;
@@ -11,19 +11,19 @@ import net.serenitybdd.screenplay.actions.Enter;
 
 public class Login implements Task {
 
-    DatosLogin datosLogin;
+    DataLogin dataLogin;
 
-    public Login(DatosLogin datosLogin) {
-        this.datosLogin = datosLogin;
+    public Login(DataLogin dataLogin) {
+        this.dataLogin = dataLogin;
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(MenuComponent.BTN_ANUNCE),
                 Click.on(MenuComponent.BTN_LOGIN),
-                Enter.theValue(datosLogin.getEmail()).into(LoginPage.TXT_EMAIL),
+                Enter.theValue(dataLogin.getEmail()).into(LoginPage.TXT_EMAIL),
                 Click.on(LoginPage.BTN_EMAIL),
-                Enter.theValue(datosLogin.getPassword()).into(LoginPage.TXT_PASSWORD),
+                Enter.theValue(dataLogin.getPassword()).into(LoginPage.TXT_PASSWORD),
                 Click.on(LoginPage.BTN_INICIAR_SESION));
         try {
             Thread.sleep(6000);
@@ -33,7 +33,7 @@ public class Login implements Task {
 
     }
 
-    public static Login enterCredentials(DatosLogin datosLogin) {
-        return Tasks.instrumented(Login.class, datosLogin);
+    public static Login enterCredentials(DataLogin dataLogin) {
+        return Tasks.instrumented(Login.class, dataLogin);
     }
 }

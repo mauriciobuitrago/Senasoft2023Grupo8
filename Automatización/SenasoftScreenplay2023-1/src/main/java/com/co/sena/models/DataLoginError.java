@@ -1,6 +1,6 @@
 package com.co.sena.models;
 
-public class DatosLoginError {
+public class DataLoginError {
     private String emailError;
 
     public String getEmailError() {

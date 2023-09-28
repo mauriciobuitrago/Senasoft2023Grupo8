@@ -1,6 +1,6 @@
 package com.co.sena.models;
 
-public class DatosAccommodation {
+public class DataAccommodation {
     private String destination;
 
     public String getDestination() {

@@ -1,7 +1,6 @@
 package com.co.sena.tasks;
 
-import com.co.sena.models.DatosLogin;
-import com.co.sena.models.DatosLoginError;
+import com.co.sena.models.DataLoginError;
 import com.co.sena.userinterfaces.LoginPage;
 import com.co.sena.userinterfaces.MenuComponent;
 import net.serenitybdd.screenplay.Actor;
@@ -12,17 +11,17 @@ import net.serenitybdd.screenplay.actions.Enter;
 
 public class LoginError implements Task {
 
-   DatosLoginError datosLoginError;
+   DataLoginError dataLoginError;
 
-    public LoginError(DatosLoginError datosLoginError) {
-        this.datosLoginError = datosLoginError;
+    public LoginError(DataLoginError dataLoginError) {
+        this.dataLoginError = dataLoginError;
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(MenuComponent.BTN_ANUNCE),
                 Click.on(MenuComponent.BTN_LOGIN),
-                Enter.theValue(datosLoginError.getEmailError()).into(LoginPage.TXT_EMAIL),
+                Enter.theValue(dataLoginError.getEmailError()).into(LoginPage.TXT_EMAIL),
                 Click.on(LoginPage.BTN_EMAIL)
                );
         try {
@@ -33,7 +32,7 @@ public class LoginError implements Task {
 
     }
 
-    public static LoginError enterCredentialsError(DatosLoginError datosLoginError) {
-        return Tasks.instrumented(LoginError.class, datosLoginError);
+    public static LoginError enterCredentialsError(DataLoginError dataLoginError) {
+        return Tasks.instrumented(LoginError.class, dataLoginError);
     }
 }

@@ -13,3 +13,11 @@ Feature: Login successful
         |emailError|
         |carlosprogor8@gmail.com|
       Then  user not logged in
+
+      Scenario: Login error Gmail
+        Given he user enters the website
+        When he user enters the wrong email structure
+          |gmailIncompleto|
+          |carlosprogor|
+        Then he user cannot log in
+

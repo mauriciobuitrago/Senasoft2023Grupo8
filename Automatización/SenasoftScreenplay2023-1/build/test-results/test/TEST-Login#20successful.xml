@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Login successful" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-09-28T00:12:40" hostname="DESKTOP-VV16LJT" time="41.017">
+<testsuite name="Login successful" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-09-28T14:06:54" hostname="DESKTOP-VV16LJT" time="57.027">
   <properties/>
-  <testcase name="Login" classname="Login successful" time="22.373"/>
-  <testcase name="Login Error" classname="Login successful" time="18.632"/>
+  <testcase name="Login" classname="Login successful" time="20.782"/>
+  <testcase name="Login Error" classname="Login successful" time="18.65"/>
+  <testcase name="Login error Gmail" classname="Login successful" time="17.55"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[sep 27, 2023 7:12:41 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[sep 28, 2023 9:06:55 AM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disable-popup-blocking,--..., goog:chromeOptions: {args: [--disable-popup-blocking, --disable-download-notifica..., --start-maximized, --text-type, --ignore-certificate-errors, --allow-running, --insecure-content, --disable-translate, --always.authorize-plugin, --disable-extension], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 117.0.5938.92 (67649b10b92bb182fba357831ef7dd6a1baa5648-refs/branch-heads/5938_62@{#14}) on port 36660
+Starting ChromeDriver 117.0.5938.92 (67649b10b92bb182fba357831ef7dd6a1baa5648-refs/branch-heads/5938_62@{#14}) on port 7615
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sep 27, 2023 7:12:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+sep 28, 2023 9:06:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
@@ -24,15 +25,15 @@ INFORMACIÓN: Detected dialect: W3C
 
 TEST PASSED: Login
 ----------------------------------------------------------------------------
-sep 27, 2023 7:13:03 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+sep 28, 2023 9:07:15 AM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disable-popup-blocking,--..., goog:chromeOptions: {args: [--disable-popup-blocking, --disable-download-notifica..., --start-maximized, --text-type, --ignore-certificate-errors, --allow-running, --insecure-content, --disable-translate, --always.authorize-plugin, --disable-extension], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 117.0.5938.92 (67649b10b92bb182fba357831ef7dd6a1baa5648-refs/branch-heads/5938_62@{#14}) on port 32609
+Starting ChromeDriver 117.0.5938.92 (67649b10b92bb182fba357831ef7dd6a1baa5648-refs/branch-heads/5938_62@{#14}) on port 37902
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sep 27, 2023 7:13:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+sep 28, 2023 9:07:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
@@ -43,6 +44,26 @@ INFORMACIÓN: Detected dialect: W3C
         /_/                                                                
 
 TEST PASSED: Login Error
+----------------------------------------------------------------------------
+sep 28, 2023 9:07:34 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disable-popup-blocking,--..., goog:chromeOptions: {args: [--disable-popup-blocking, --disable-download-notifica..., --start-maximized, --text-type, --ignore-certificate-errors, --allow-running, --insecure-content, --disable-translate, --always.authorize-plugin, --disable-extension], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 117.0.5938.92 (67649b10b92bb182fba357831ef7dd6a1baa5648-refs/branch-heads/5938_62@{#14}) on port 36515
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+sep 28, 2023 9:07:35 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Login error Gmail
 ----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>

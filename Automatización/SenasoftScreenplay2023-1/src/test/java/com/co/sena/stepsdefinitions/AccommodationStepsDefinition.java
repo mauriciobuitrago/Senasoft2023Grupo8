@@ -1,12 +1,9 @@
 package com.co.sena.stepsdefinitions;
 
-import com.co.sena.models.DatosAccommodation;
 import com.co.sena.tasks.Accommodation;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.actors.OnStage;
-
-import java.util.List;
 
 public class AccommodationStepsDefinition {
     @When("^he user enters the information$")

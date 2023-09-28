@@ -1,9 +1,11 @@
 package com.co.sena.stepsdefinitions;
 
-import com.co.sena.models.DatosLogin;
-import com.co.sena.models.DatosLoginError;
+import com.co.sena.models.DataErrorGmail;
+import com.co.sena.models.DataLogin;
+import com.co.sena.models.DataLoginError;
 import com.co.sena.questions.ErrorGmail;
 import com.co.sena.questions.ValidarText;
+import com.co.sena.tasks.GmailIncomplete;
 import com.co.sena.tasks.Login;
 import com.co.sena.tasks.LoginError;
 import cucumber.api.java.Before;
@@ -39,12 +41,12 @@ public class LoginStepsDefinition {
     }
 
     @When("^he user enters the credentials$")
-    public void heUserEntersTheCredentials(List <DatosLogin> datosLoginList) {
+    public void heUserEntersTheCredentials(List <DataLogin> dataLoginList) {
 
-        DatosLogin datosLogin;
-        datosLogin = datosLoginList.get(0);
+        DataLogin dataLogin;
+        dataLogin = dataLoginList.get(0);
 
-        OnStage.theActorInTheSpotlight().attemptsTo(Login.enterCredentials(datosLogin));
+        OnStage.theActorInTheSpotlight().attemptsTo(Login.enterCredentials(dataLogin));
 
     }
 
@@ -56,12 +58,12 @@ public class LoginStepsDefinition {
     }
 
     @When("^he user enters the email wrong$")
-    public void heUserEntersTheEmailWrong(List <DatosLoginError> datosLoginErrorList) {
-        DatosLoginError datosLoginError;
-        datosLoginError= datosLoginErrorList.get(0);
+    public void heUserEntersTheEmailWrong(List <DataLoginError> dataLoginErrorList) {
+        DataLoginError dataLoginError;
+        dataLoginError = dataLoginErrorList.get(0);
 
 
-        OnStage.theActorInTheSpotlight().attemptsTo(LoginError.enterCredentialsError(datosLoginError));
+        OnStage.theActorInTheSpotlight().attemptsTo(LoginError.enterCredentialsError(dataLoginError));
 
     }
     @Then("^user not logged in$")
@@ -69,6 +71,21 @@ public class LoginStepsDefinition {
     OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ErrorGmail.compareError()
     ,Matchers.is(true)));
 
+    }
+
+    @When("^he user enters the wrong email structure$")
+    public void heUserEntersTheWrongEmailStructure(List<DataErrorGmail> dataErrorGmailList) {
+        DataErrorGmail dataErrorGmail;
+        dataErrorGmail = dataErrorGmailList.get(0);
+        OnStage.theActorInTheSpotlight().attemptsTo(GmailIncomplete.enterCredentialsGmail(dataErrorGmail));
+
+
+    }
+
+    @Then("^he user cannot log in$")
+    public void heUserCannotLogIn() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(com.co.sena.questions.GmailIncomplete.compareGmail()
+                ,Matchers.is(true)));
     }
 
 }

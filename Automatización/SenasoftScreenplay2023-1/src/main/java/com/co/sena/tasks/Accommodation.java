@@ -1,8 +1,6 @@
 package com.co.sena.tasks;
 
-import com.co.sena.models.DatosAccommodation;
 import com.co.sena.userinterfaces.AccommodationPage;
-import com.co.sena.userinterfaces.LoginPage;
 import com.co.sena.userinterfaces.MenuComponent;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;

@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Login successful" skipped="0" tests="2" time="39.46" timestamp="2023-09-27 07:12:40"><testcase name="Login"/><testcase name="Login Error"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Login successful" skipped="0" tests="3" time="54.62" timestamp="2023-09-28 09:06:54"><testcase name="Login"/><testcase name="Login Error"/><testcase name="Login error Gmail"/></testsuite>
