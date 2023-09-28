@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-09-2023 17:37</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2023 09:38</span>
     <br style="clear:left"/>
 </div>
 
@@ -167,9 +167,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">View accommodation
+                                <span class="failing-color">View accommodation
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -186,34 +186,81 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.co.sena.tasks.Accommodation.performAs(Accommodation.java:16)<br />com.co.sena.stepsdefinitions.AccommodationStepsDefinition.heUserEntersTheInformation(AccommodationStepsDefinition.java:12)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //input[@id='group_children' and @value='2'] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>com.co.sena.tasks.Accommodation.performAs(Accommodation.java :16)<br />com.co.sena.stepsdefinitions.AccommodationStepsDefinition.heUserEntersTheInformation(AccommodationStepsDefinition.java :12)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource4718744814776539093.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="b2a073fed4d94463881d5290bf5d71e7b7debd2f64c7ee06d0cf220daf0ffbef.png" title=" Given he user enters the website" width="1366"/>
-                <img src="b2a073fed4d94463881d5290bf5d71e7b7debd2f64c7ee06d0cf220daf0ffbef.png" title=" user opens the https://www.booking.com/" width="1366"/>
-                <img src="b2a073fed4d94463881d5290bf5d71e7b7debd2f64c7ee06d0cf220daf0ffbef.png" title=" Given he user enters the website (completed)" width="1366"/>
-                <img src="8576fb21279d331f7f6fb57c7afb4befde633d49f42b3058c008c5cfb2d9c236.png" title=" When he user enters the information" width="1366"/>
-                <img src="8576fb21279d331f7f6fb57c7afb4befde633d49f42b3058c008c5cfb2d9c236.png" title=" User accommodation" width="1366"/>
-                <img src="bcc018fe80ee2464154f4c62a5532ac2763a4921318fb5230ec8fa2036ce3411.png" title=" user clicks on Clic en bot&oacute;n login" width="1366"/>
-                <img src="63b48193e8e6aa7d1a1415a52315ee3716f08e8c32fbda43371d3e0bcac6f4f5.png" title=" user clicks on Clic en bot&oacute;n login (completed)" width="1366"/>
-                <img src="63b48193e8e6aa7d1a1415a52315ee3716f08e8c32fbda43371d3e0bcac6f4f5.png" title=" user clicks on opcion USD" width="1366"/>
-                <img src="e970bb3f2adc6eb6a90a3cfb8277245b0c7b6571e4096e8cadd51a6750cf7804.png" title=" user clicks on opcion USD (completed)" width="1366"/>
-                <img src="e970bb3f2adc6eb6a90a3cfb8277245b0c7b6571e4096e8cadd51a6750cf7804.png" title=" user clicks on destino" width="1366"/>
-                <img src="f06da7d7ebe1029c93f53c21b7daa6b00b021a1e32e226db1d27ecb36c585fce.png" title=" user clicks on destino (completed)" width="1366"/>
-                <img src="f06da7d7ebe1029c93f53c21b7daa6b00b021a1e32e226db1d27ecb36c585fce.png" title=" user enters 'medellin' into destino" width="1366"/>
-                <img src="2d4e3a0a3558cb7f71f44e30af9182504f2a13cdb52ac5f64580a2019b014267.png" title=" user enters 'medellin' into destino (completed)" width="1366"/>
-                <img src="2d4e3a0a3558cb7f71f44e30af9182504f2a13cdb52ac5f64580a2019b014267.png" title=" user clicks on Fecha de salida" width="1366"/>
-                <img src="13422c06b4813f15497cf150a09bd907bdf0780322cb344f58e563eec065b881.png" title=" user clicks on Fecha de salida (completed)" width="1366"/>
-                <img src="13422c06b4813f15497cf150a09bd907bdf0780322cb344f58e563eec065b881.png" title=" user clicks on Bot&oacute;n de fecha de salida" width="1366"/>
-                <img src="c343c07c7649dc80ac3a6d741ad11eb8295602afadae7af90a05215746b1ff53.png" title=" user clicks on Bot&oacute;n de fecha de salida (completed)" width="1366"/>
-                <img src="c343c07c7649dc80ac3a6d741ad11eb8295602afadae7af90a05215746b1ff53.png" title=" user clicks on Bot&oacute;n de fecha de regreso" width="1366"/>
-                <img src="006fa07f1af3dfe5740c6a99e5581824c2c84fc19621104d66f069ac72822d1d.png" title=" user clicks on Bot&oacute;n de fecha de regreso (completed)" width="1366"/>
-                <img src="006fa07f1af3dfe5740c6a99e5581824c2c84fc19621104d66f069ac72822d1d.png" title=" user clicks on destino" width="1366"/>
-                <img src="13ec648c9c767e8b86ee1b0b7289a8f96db8fffa72c9a32b79fa8ef433a338e1.png" title=" user clicks on destino (completed)" width="1366"/>
-                <img src="13ec648c9c767e8b86ee1b0b7289a8f96db8fffa72c9a32b79fa8ef433a338e1.png" title=" user clicks on cantidad de adulto   " width="1366"/>
-                <img src="d4e3528ddfb3ef7fa560f350dd15bfb85bf7d7b8b3395e43bf12e14f2345292d.png" title=" user clicks on cantidad de adulto    (completed)" width="1366"/>
-                <img src="c1bcb04e2bdcd7c6691606609268d81c2bd38bad4d52bed3c4bdfb3abf7ea381.png" title=" User accommodation (completed)" width="1366"/>
-                <img src="c1bcb04e2bdcd7c6691606609268d81c2bd38bad4d52bed3c4bdfb3abf7ea381.png" title=" When he user enters the information (completed)" width="1366"/>
-                <img src="c1bcb04e2bdcd7c6691606609268d81c2bd38bad4d52bed3c4bdfb3abf7ea381.png" title=" Then he suer view information: <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="93ae8022b72cb2465e58365c95c3c8ac17582415344c17f00c1ceefca9e68d20.png" title=" Given he user enters the website" width="1366"/>
+                <img src="93ae8022b72cb2465e58365c95c3c8ac17582415344c17f00c1ceefca9e68d20.png" title=" user opens the https://www.booking.com/" width="1366"/>
+                <img src="93ae8022b72cb2465e58365c95c3c8ac17582415344c17f00c1ceefca9e68d20.png" title=" Given he user enters the website (completed)" width="1366"/>
+                <img src="94dd3a4fffe7517ec34825e6a9cf854470eb83d489159e40f638455cc97a643e.png" title=" When he user enters the information" width="1366"/>
+                <img src="94dd3a4fffe7517ec34825e6a9cf854470eb83d489159e40f638455cc97a643e.png" title=" User accommodation" width="1366"/>
+                <img src="94dd3a4fffe7517ec34825e6a9cf854470eb83d489159e40f638455cc97a643e.png" title=" user clicks on cerrar anuncio" width="1366"/>
+                <img src="eab374ecf6ef7688149799037d06262bd24d483014ad339e28ae1a73c882340a.png" title=" user clicks on cerrar anuncio (completed)" width="1366"/>
+                <img src="eab374ecf6ef7688149799037d06262bd24d483014ad339e28ae1a73c882340a.png" title=" user clicks on Clic en bot&oacute;n login" width="1366"/>
+                <img src="bc4c5afde47a534a0969bfe467abdd77d7048af65fcc3c456deff8e883aebdf3.png" title=" user clicks on Clic en bot&oacute;n login (completed)" width="1366"/>
+                <img src="bc4c5afde47a534a0969bfe467abdd77d7048af65fcc3c456deff8e883aebdf3.png" title=" user clicks on opcion USD" width="1366"/>
+                <img src="e3a2150d3a7b800d02dc11b8c01ad287b5c1b165b6d88807b8ee4b8501b33b23.png" title=" user clicks on opcion USD (completed)" width="1366"/>
+                <img src="e3a2150d3a7b800d02dc11b8c01ad287b5c1b165b6d88807b8ee4b8501b33b23.png" title=" user clicks on destino" width="1366"/>
+                <img src="41b9415c37c71700555120b363a70d79a6ddf91cf9de3905d639cbb22e14882c.png" title=" user clicks on destino (completed)" width="1366"/>
+                <img src="41b9415c37c71700555120b363a70d79a6ddf91cf9de3905d639cbb22e14882c.png" title=" user enters 'medellin' into destino" width="1366"/>
+                <img src="4802e53725c9e796ed50b7455265e1fe466a38884080d3891a8661b3d80bb813.png" title=" user enters 'medellin' into destino (completed)" width="1366"/>
+                <img src="4802e53725c9e796ed50b7455265e1fe466a38884080d3891a8661b3d80bb813.png" title=" user clicks on Fecha de salida" width="1366"/>
+                <img src="43abca25a015867809ce165deb2741e77ae7a29d082e3c2ad81a0a6a1a3a7a06.png" title=" user clicks on Fecha de salida (completed)" width="1366"/>
+                <img src="43abca25a015867809ce165deb2741e77ae7a29d082e3c2ad81a0a6a1a3a7a06.png" title=" user clicks on Bot&oacute;n de fecha de salida" width="1366"/>
+                <img src="c7614ebd0dc26ce1790e525895b658eb0130466888929d1ce018dc6537d2ee07.png" title=" user clicks on Bot&oacute;n de fecha de salida (completed)" width="1366"/>
+                <img src="c7614ebd0dc26ce1790e525895b658eb0130466888929d1ce018dc6537d2ee07.png" title=" user clicks on Bot&oacute;n de fecha de regreso" width="1366"/>
+                <img src="6e4e6bf06d9fca030505bf7b19976b1f68d54a52ffff1f4f8bdcdd2c229e9be7.png" title=" user clicks on Bot&oacute;n de fecha de regreso (completed)" width="1366"/>
+                <img src="6e4e6bf06d9fca030505bf7b19976b1f68d54a52ffff1f4f8bdcdd2c229e9be7.png" title=" user clicks on destino" width="1366"/>
+                <img src="3883c888deecc7e92d090d7ef07a8c381d9a71a61da10ca13593ca429c82272a.png" title=" user clicks on destino (completed)" width="1366"/>
+                <img src="3883c888deecc7e92d090d7ef07a8c381d9a71a61da10ca13593ca429c82272a.png" title=" user clicks on cantidad de adulto   " width="1366"/>
+                <img src="dce14624c368035941e13f5a812039ec186b72335275eaf0b7c99d470c21c6e5.png" title=" user clicks on cantidad de adulto    (completed)" width="1366"/>
+                <img src="dce14624c368035941e13f5a812039ec186b72335275eaf0b7c99d470c21c6e5.png" title=" user clicks on cantidad de ni&ntilde;os  " width="1366"/>
+                <img src="ca24b8f899d7d7d9d6097deafe66b9405b8191b1b9537ea9f7c421989b4cf7ce.png" title=" user clicks on cantidad de ni&ntilde;os   (completed): <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 

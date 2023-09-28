@@ -19,8 +19,7 @@ public class AccommodationPage {
             .locatedBy("//button[@class='a83ed08757 c21c56c305 f38b6daa18 d691166b09 ab98298258 deab83296e bb803d8689 f4d78af12a']");
 
     public static final Target TXT_CHILDREN = Target.the("cantidad de niños  ")
-            .locatedBy("//button[@class='a83ed08757 c21c56c305 f38b6daa18 d691166b09 ab98298258 deab83296e bb803d8689 f4d78af12a']");
-
+            .locatedBy("//input[@id='group_children' and @value='2']");
     public static final Target BTN_OCCUOANCY = Target.the("destino")
             .locatedBy("//button[@data-testid='occupancy-config']");
     public static final Target BTN_USD = Target.the("opcion USD")

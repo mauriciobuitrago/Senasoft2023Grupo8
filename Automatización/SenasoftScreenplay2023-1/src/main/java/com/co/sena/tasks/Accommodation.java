@@ -22,7 +22,8 @@ public class Accommodation implements Task {
                 Click.on(AccommodationPage.TXT_DATE_STAR),
                 Click.on(AccommodationPage.TXT_DATE_END),
                 Click.on(AccommodationPage.BTN_OCCUOANCY),
-                Click.on(AccommodationPage.TXT_ADULT)
+                Click.on(AccommodationPage.TXT_ADULT),
+                Click.on(AccommodationPage.TXT_CHILDREN)
                 );
 
         try {
